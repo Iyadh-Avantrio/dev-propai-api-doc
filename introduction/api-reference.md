@@ -4,7 +4,7 @@ The Prop-AI API is organized around [REST](http://en.wikipedia.org/wiki/Represen
 
 {% code title="BASE URL" %}
 ```http
-https://prop-ai.com/
+https://api.prop-ai.com/
 ```
 {% endcode %}
 
