@@ -43,7 +43,7 @@ const axios = require('axios');
 
 const API_KEY = 'prop-ai_1234567890abcdef';
 
-axios.get('https://api.prop-ai.com/v1/listings', {
+axios.get('https://api.prop-ai.com/data/metrics/areas/AL BARSHA SOUTH FOURTH', {
   headers: {
     'x-api-key': API_KEY,
     'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ axios.get('https://api.prop-ai.com/v1/listings', {
 import requests
 
 API_KEY = 'prop-ai_1234567890abcdef'
-url = 'https://api.prop-ai.com/v1/listings'
+url = 'https://api.prop-ai.com/data/metrics/areas/AL BARSHA SOUTH FOURTH'
 
 headers = {
     'x-api-key': API_KEY,
@@ -86,7 +86,7 @@ else:
 <?php
 
 $apiKey = 'prop-ai_1234567890abcdef';
-$url = 'https://api.prop-ai.com/v1/listings';
+$url = 'https://api.prop-ai.com/data/metrics/areas/AL BARSHA SOUTH FOURTH';
 
 $ch = curl_init($url);
 
