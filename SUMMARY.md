@@ -1,24 +1,20 @@
 # Table of contents
 
-* [Prop-AI](README.md)
-  * [API Reference](prop-ai/api-reference.md)
-  * [Authentication](prop-ai/authentication.md)
-  * [Connected Accounts](prop-ai/connected-accounts.md)
-  * [Responses](prop-ai/responses/README.md)
-    * [Handling Errors](prop-ai/responses/handling-errors.md)
-    * [Expanding Responses](prop-ai/responses/expanding-responses.md)
-
-## Core Resources
-
-***
-
-* ```yaml
-  type: builtin:openapi
-  props:
-    models: true
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: my-api
-  ```
+* [Introduction](README.md)
+  * [API Reference](introduction/api-reference.md)
+  * [Authentication](introduction/authentication.md)
+  * [Connected Accounts](introduction/connected-accounts.md)
+  * [Responses](introduction/responses/README.md)
+    * [Handling Errors](introduction/responses/handling-errors.md)
+    * [Expanding Responses](introduction/responses/expanding-responses.md)
+* [Core Resources](core-resources/README.md)
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: true
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: prop-ai-api
+    ```

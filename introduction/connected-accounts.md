@@ -1,6 +1,6 @@
 # Connected Accounts
 
-To act as connected accounts, clients can issue requests using the `PropAI`-Account special header. Make sure that this header contains a Stripe account ID, which usually starts with the `acct_` prefix.
+To act as connected accounts, clients can issue requests using the `PropAI`Account special header. Make sure that this header contains a PropAI account ID, which usually starts with the `acct_` prefix.
 
 The value is set per-request as shown in the adjacent code sample. Methods on the returned object reuse the same account ID.
 
@@ -12,7 +12,7 @@ Related guide: [Making API calls for connected accounts](https://docs.stripe.com
 {% tab title="JavaScript" %}
 ```javascript
 propai.charges.retrieve('ch_3LmjSR2eZvKYlo2C1cPZxlbL', {
-  stripeAccount: 'acct_1032D82eZvKYlo2C'
+  propaiAccount: 'acct_1032D82eZvKYlo2C'
 });
 ```
 {% endtab %}
@@ -22,7 +22,7 @@ propai.charges.retrieve('ch_3LmjSR2eZvKYlo2C1cPZxlbL', {
 import propai
 charge = propai.Charge.retrieve(
   "ch_3Lmjoz2eZvKYlo2C1rBER4Dk",
-  stripe_account="acct_1032D82eZvKYlo2C"
+  propai_account="acct_1032D82eZvKYlo2C"
 )
 charge.capture() # Uses the same account.
 ```
@@ -39,4 +39,3 @@ $ch->capture(); // Uses the same account.
 ```
 {% endtab %}
 {% endtabs %}
-
