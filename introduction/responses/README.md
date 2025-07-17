@@ -2,7 +2,7 @@
 
 ### Overview
 
-The Prop-AI API uses conventional HTTP response codes to indicate the success or failure of API requests. In general, codes in the `2xx` range indicate success, codes in the `4xx` range indicate an error that failed given the information provided (e.g., invalid location, missing property parameters), and codes in the `5xx` range indicate an error with Prop-AI's servers (these are rare).
+The Prop-AI API uses conventional HTTP response codes to indicate the success or failure of API requests. In general, codes in the `2xx` range indicate success, codes in the `4xx` range indicate an error that failed given the information provided (e.g., invalid location, missing query parameters), and codes in the `5xx` range indicate an error with Prop-AI's servers (these are rare).
 
 When working with Dubai and Middle East property metrics, you'll most commonly encounter `200` for correct locations, `404` when requesting non-existent locations, and `429` when exceeding rate limits.
 
